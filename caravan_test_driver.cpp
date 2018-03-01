@@ -12,7 +12,6 @@
  */
 #include <stdio.h>
 #include <string.h>
-
 #include "shortcut.h"
 #include "test_pack_animal.h"
 #include "test_caravan.h"
