@@ -15,7 +15,7 @@
 
 #include "pack_animal.h"
 struct Node {
-  PackAnimal data;
+  struct PackAnimalImplementation* data;
   struct Node* next;
 };
 
