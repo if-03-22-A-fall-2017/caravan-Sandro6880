@@ -72,8 +72,18 @@ void add_pack_animal(Caravan caravan, PackAnimal animal)
 
 void remove_pack_animal(Caravan caravan, PackAnimal animal)
 {
-  struct Node* current = caravan->head;
-
+    struct Node* current = caravan->head;
+    while (current->next != 0) {
+      if(current->data == animal)
+      {
+        struct Node* to_delete = current;
+        current = current->next;
+        sfree(to_delete);
+      }
+      else{
+        current = current->next;
+      }
+    } 
 }
 
 int get_caravan_load(Caravan caravan)
